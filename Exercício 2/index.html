@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 2</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 0px;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 3%;
+        }
+        
+        body :is(p, strong, h1, h2, h3, a, span) {
+            font-size: 22px;
+        }
+
+        p {
+            color: #5c5c5c;
+            margin-bottom: 48px;
+        }
+
+        a,
+        a:link, 
+        a:visited, 
+        a:hover, 
+        a:active {
+            color: #5c5c5c;
+        }
+
+        img{
+            max-width: 100%;
+        }
+        
+        .one--col {
+            padding: 0 8%;            
+        }
+
+        .section--heading {
+            margin-right: 80px;
+            margin-bottom: 36px;
+            padding: 36px 52px 12px 52px;
+            text-transform:uppercase;
+            color: #fff;
+            background: linear-gradient(to left, #959595, #5c5c5c);
+            overflow: hidden;
+        }
+        
+        .section--heading.one--border {
+            border-radius: 0 0 24px 0;
+        }
+
+        .section--heading.two--border {
+            border-radius: 0 24px 24px 0;
+        }
+
+        .section--heading h1 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .section--heading h2 {
+            font-size: 28px;
+            font-weight: 200;
+            line-height: 1.2;
+            margin-bottom: 24px;
+        }
+
+        .section--heading p {
+            color: #fff;
+            text-transform: none;
+            margin-bottom: 36px;
+        }
+        
+        .introduction {
+            line-height: 1.6;
+        }
+        
+        .benefit h3 {
+            padding: 12px 18px;
+            color: #5c5c5c;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+
+        .benefit img {
+            margin-bottom: 24px;
+        }
+
+        .benefit :is(p, strong, span, a) {
+            font-size: 16px;
+        }
+
+        .btn--vaidevisa, 
+        .btn--vaidevisa:link, 
+        .btn--vaidevisa:visited, 
+        .btn--vaidevisa:hover, 
+        .btn--vaidevisa:active {
+            display: inline-block;
+            text-decoration: none;
+            font-size: 14px;
+            letter-spacing: 1px;
+            font-weight: 100;
+            color: #fff;
+            background-color: #9a7850;
+            padding: 12px 24px;
+            margin-bottom: 24px;
+        }
+
+        .additional--info,
+        .additional--info a {
+            font-size: 11px;
+            color: #9b9b9b;
+            text-decoration: none;
+        }
+
+        hr {
+            height: 1px;
+            background-color: #d9d9d9;
+            margin-bottom: 36px;
+        }
+
+        .logo {
+            float: left;
+        }
+
+        .social {
+            float: right;
+        }
+
+        .social li {
+            display: inline;
+            padding: 12px;
+        }
+
+        .footer {
+            float: left;
+            clear: both;
+        }
+
+        .footer p {
+            margin: 24px 0;
+            font-size: 12px;
+        }
+
+        .footer span {
+            display: block;
+            text-align: center;
+            margin: 24px 0;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .link--container {
+            list-style-type: none;
+            display: table;
+            width: 100%;
+        }
+
+        .link--container li {
+            display: table-cell;
+            text-align: center;
+        }
+
+        .link--container :is(a:link, a:visited, a:hover, a:active) {
+            font-size: 14px;
+            color:darkblue;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div>
+          <img src="img/banner.png" alt="" />
+        </div>
+      </header>
+      <div class="banner">
+        <img src="img/img1.jpg" alt="" />
+      </div>
+      <div class="heading section--heading one--border">
+          <h1>Visa Platinum</h1>
+          <h2>Privilégios para todos<br>os seus momentos</h2>
+        </div>
+        <div class="one--col">
+        <div class="introduction">
+          <p>Olá, ##Name##!</p>
+          <p>
+            Seu <strong>Cartão Visa Platinum</strong> oferece diversos
+            benefícios para você viver
+            <strong>momentos únicos com mais tranquilidade</strong>. Conheça os
+            principais deles:
+          </p>
+        </div>
+        <div class="benefit">
+          <h3 class="heading benefit--heading">Visa Concierge</h3>
+          <img src="img/img2.jpg" alt="" />
+          <p>
+            Compras de presentes, experiências gastronômicas, diversão para a
+            família e mais: tenha tudo ao seu alcance com seu assistente pessoal
+            24h Visa Concierge, que facilita sua vida dentro e fora de casa.
+            <a href="#" class="text--link">Saiba como aproveitar</a>.
+          </p>
+        </div>
+        <div class="benefit">
+          <h3 class="heading benefit--heading">Benefícios para compras</h3>
+          <img src="img/img3.jpg" alt="" />
+          <p>
+            Na compra de produtos elegíveis, você pode contar com
+            <a href="#" class="text--link">garantia original estendida</a>,
+            receber
+            <a href="#" class="text--link"
+              >proteção contra roubos ou danos acidentais</a
+            >
+            e até <a href="#" class="text--link">compensação</a> caso encontre o
+            mesmo produto por um valor inferior.
+          </p>
+        </div>
+        </div>
+        <div class="heading section--heading two--border">
+          <h2>Com Visa Platinum,<br>seu dinheiro vale mais</h2>
+          <p>
+            Conheça todos os benefícios que preparamos para você no Vai de Visa.
+          </p>
+          <a href="#" class="btn btn--vaidevisa">vaidevisa.com.br</a>
+        </div>
+        <div class="one--col">
+      <p class="additional--info">A Visa não é provedora dos seguros. Os seguros são oferecidos pela AIG Seguros Brasil S/A. O seguro Garantia Original Estendida requer a emissão prévia do Bilhete de Seguro. Consulte os termos e condições dos benefícios Visa em: <a href="#"" class="text--link">www.visa.com.br/portaldebeneficios</a>.</p>
+      <hr />
+      <div class="social--container">
+          <div class="logo">
+              <a href="#"><img src="img/visa.png" alt=""/></a>
+            </div>
+            <div>
+                <ul class="social">
+                    <li>
+                        <a href="#" target="_blank"><img src="img/fb.png" alt="" /></a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank"><img src="img/tt.png" alt="" /></a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank"><img src="img/in.png" alt="" /></a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank"><img src="img/ig.png" alt="" /></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      <footer class="footer">
+        <p class="additional--info">Por medida de segurança, a Visa nunca solicita os seus dados bancários ou a senha do seu cartão. Se suspeitar de e-mails fraudulentos, não forneça seus dados.</p>
+        <ul class="link--container">
+            <li>
+                <a href="#">Vai de Visa</a>
+            </li>
+            <li>
+                <a href="#">Dicas de segurança</a>
+            </li>
+            <li>
+                <a href="#">Termos de uso</a>
+            </li>
+            <li>
+                <a href="#">Política de privacidade</a>
+            </li>
+        </ul>
+        <span>&copy; Copyright 2001-2020 Visa. All Rights Reserved - www.visa.com.br</span>
+      </footer>
+    </div>
+    </div>
+  </body>
+</html>
